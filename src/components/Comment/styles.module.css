@@ -1,0 +1,97 @@
+.comment {
+    margin-top: 1.5rem;
+    
+    display: flex;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    
+    border-radius: 0.5rem;
+}
+
+.commentBox {
+    flex: 1;
+}
+
+.commentContent {
+    background-color: var(--gray-700);
+    padding: 1rem;
+    
+    border-radius: 0.5rem;
+}
+
+.commentContent header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.authorAndTime {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorAndTime strong {
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.authorAndTime time {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: var(--gray-400);
+}
+
+.commentContent header button[type="button"] {
+    background-color: transparent;
+    
+    color: var(--gray-400);
+    line-height: 0;
+    
+    border: 0;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.commentContent header button[type="button"]:hover {
+    color: var(--red-500);
+}
+
+.commentContent p {
+    margin-top: 1rem;
+    color: var(--gray-300);
+}
+
+.commentBox footer {
+    margin-top: 1rem;
+}
+
+.commentBox footer button[type="button"] {
+    background-color: transparent;
+    
+    display: flex;
+    align-items: center;
+    
+    color: var(--gray-400);
+    
+    border: 0;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+.commentBox footer button[type="button"]:hover {
+    color: var(--green-300);
+}
+
+.commentBox footer button[type="button"] svg {
+    margin-right: 0.5rem;
+}
+
+.commentBox footer button[type="button"] span::before {
+    content: '\2022';
+    padding: 0 0.25rem;
+}
